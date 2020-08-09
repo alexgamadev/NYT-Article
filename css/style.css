@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.app {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+}
+
+.content {
+    overflow: scroll;
+    padding-top: 40px;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: auto auto auto 1fr auto auto;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    gap: 5px;
+    border-bottom: 1px solid #E2E2E2;
+    padding: 5px 10px 5px 5px;
+}
+
+.header > a, button {
+    font-family: 'Libre Franklin', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.category-link {
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+header a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    line-height: 19px;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.icon {
+    padding: 10px;
+    transition: background 0.7s;
+    cursor: pointer;
+}
+
+.icon:hover {
+    background: #f1f1f1;
+}
+
+h1 {
+    margin: 0px;
+}
+
+.button {
+    background: #567B95;
+    color: #FFFFFF; 
+    font-size: 10px;
+    border-radius: 3px;
+    font-weight: 700;
+    padding: 10px 15px 5px 15px;
+    letter-spacing: 0.5px;
+    transition: all 0.5s;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background: #386B92;
+    text-decoration: none;
+}
+
+.mast {
+    width: 195px;
+    height: 26px;
+    margin: 8px 5px 5px 5px;
+}
+
+.top-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.article-title {
+    font-family: georgia,'times new roman',times,serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 36px;
+    width: 600px;
+    margin: 20px;
+}
+
+.figure {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    margin-bottom: 40px;
+}
+
+.caption {
+    margin-top: 10px;
+    width: 80%;
+    align-self: left;
+}
+
+.caption > * {
+    font-family: georgia,'times new roman',times,serif;
+    line-height: 2px;
+}
+.caption .caption-author {
+    font-size: 14px;
+    color: #888;
+}
+
+.caption .caption-text {
+    color: #666;
+}
+
+.main-article {
+    display: grid;
+    grid-template-columns: 1fr 600px 1fr;
+    column-gap: 40px;
+    padding-top: 20px;
+    margin: 0px 150px 0px 150px;
+}
+
+.details-comment {
+    font-size: 11px;
+    left: 15px;
+    top: 15px;
+    position: absolute;
+}
+
+.article-section {
+    grid-column: 2/ -2;
+}
+
+.article-section-full {
+    grid-column: 1/ -1;
+}
+
+.article-author {
+    font-family: helvetica,arial,sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: #333;
+    letter-spacing: 0px;
+}
+
+.author-link {
+    border-bottom: 1px solid #ccc;
+    text-decoration: none;
+}
+
+.author-link:hover {
+    border-bottom: none;
+    text-decoration: none;
+}
+
+.article-details-bar {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+
+.details-icon {
+    background: #ececec;
+    border-radius: 20px;
+    margin: 5px;
+    border: 1px solid #ececec;
+    padding: 5px;
+}
+
+.details-date {
+    font-family: helvetica,arial,sans-serif;
+    font-size: 13px;
+}
+
+.details-social {
+    display:flex;
+    align-items: center;
+}
+
+.details-social a:visited {
+    color: #000;
+}
+
+.details-icon:hover {
+    background: #ffffff00; 
+    border: 1px solid #d3d3d3;
+}
+
+.comment-icon {
+    position: relative;
+    font-size: 26px;
+}
+
+.fa-facebook-f {
+    width: 16px;
+}
+
+.fa-facebook-f::before {
+    padding-left: 3px;
+}
+
+.article-text {
+    font-size: 20px;
+    font-family: georgia,'times new roman',times,serif;
+    color: #333;
+    line-height: 30px;
+}
+
+.article-text a {
+    color: #326891;
+}
+
+.article-text a:hover {
+    text-decoration: none;
+}
+
+.article-text .quote {
+    color: #333;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.times-sidenote {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: -1px;
+    font-family: georgia,'times new roman',times,serif;
+}
+
+.times-line {
+    border-bottom: 1px solid rgb(204, 204, 204);
+    width: 90px;
+    margin: 10px 0px 20px 0px;
+}
+.times-sidenote .times-thanks {
+    color: #333;
+    position: relative;
+}
+
+.times-sidenote .times-subscribe {
+    color: rgb(50, 104, 145);
+}
+
+.top-image {
+    margin: 0;
+    width: 100%;
+}
+
+/* Theory of inflation */
+
+.tof-container {
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.tof {
+    font-family: georgia,'times new roman',times,serif;
+}
+
+.tof-img {
+    width: 100%;
+    margin: 5px -5px -5px -5px;
+}
+
+.tof-text {
+    font-family: arial,helvetica,sans-serif;
+    word-spacing: -0.5px;
+}
+
+.tof-title {
+    font-weight: 800;
+    font-size: 11px;
+    padding-right: 10px;
+    letter-spacing: -0.5px;
+}
+
+.tof-p {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.intro {
+    font-size: 14px;
+    color: #666;
+}
+
+.tof h2 {
+    margin: 0px;
+    font-size: 18px;
+}
+
+.divider {
+    border-bottom: 1px solid #000;
+    position: relative;
+    width: 60px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.authors {
+    color: #222;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
